@@ -3,9 +3,8 @@ provider "aws" {
 }
 
 module "s3" {
-  source        = "git::https://github.com/karthikvch/terraform-modules.git//s3?ref=v1.1.0"
+  source        = "git::https://github.com/karthikvch/terraform-modules.git//s3?ref=v1.1.1"
   bucket_name   = var.bucket_name
-  acl           = var.acl
   versioning    = var.versioning
   force_destroy = var.force_destroy
 }
